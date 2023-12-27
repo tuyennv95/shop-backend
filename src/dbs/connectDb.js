@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const { numberConnect } = require("../helpers/checkConnect");
-const mongoUri = "mongodb://localhost:27017/shopDev";
+const {db: {port, uri, name}} = require('../configs/configMongoDb')
+const mongoUri = `mongodb://${uri}:${port}/${name}`;
 
 class Database {
   constructor() {

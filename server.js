@@ -1,7 +1,7 @@
 const app = require("./src/app");
+const {app: {port}} = require('./src/configs/configMongoDb')
 
-
-const PORT = 5000;
+const PORT = port;
 const server = app.listen(PORT, ()=>{
     console.log(`Server on running with port = ${PORT}`)
 })
