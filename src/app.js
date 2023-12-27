@@ -9,7 +9,9 @@ app.use(morgan('dev'))
 app.use(helmet())
 app.use(compression())
 //init db
-
+require('./dbs/connectDb')
+// const {overLoad} = require('./helpers/checkConnect')
+// overLoad();
 //handing error
 
 module.exports = app;
