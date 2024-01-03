@@ -1,0 +1,11 @@
+# GET http://localhost:5000/
+
+//SignUp
+POST http://localhost:5000/v1/api/shop/signup
+Content-Type: application/json
+
+{
+    "name": "tuyen",
+    "email": "tessggfgfdfsst@gmail.com",
+    "password": "1235ddddd"
+}
